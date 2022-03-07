@@ -3,12 +3,11 @@ import styles from "../styles/Home.module.css";
 // Import all components/section
 import Header from "../components/Header/Header";
 import Apropos from "./Apropos";
-import Services from './services'
-import Contact from './contact'
+import Services from "./services";
+import Contact from "./contact";
 import Realisations from "./realisations";
 
 import Separator from "../components/Reusable/Separator";
-
 
 export default function Home() {
   return (
@@ -18,27 +17,25 @@ export default function Home() {
 
       {/*  Main content of hompage */}
       <main className={styles.main}>
-
-      <section id="services">
+        <section id="services">
           <Services />
         </section>
-        <Separator/>
+        <Separator />
 
         <section id="à-propos">
           <Apropos />
         </section>
-        <Separator/>
+        <Separator />
 
         <section id="contact">
           <Contact />
         </section>
-        <Separator/>
+        <Separator />
 
         <section id="réalisation">
           <Realisations />
         </section>
-        <Separator/>
-
+        <Separator />
       </main>
     </div>
   );
