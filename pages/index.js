@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 
 // Import all components/section
 import Header from "../components/Header/Header";
-import Apropos from "./Apropos";
+import Apropos from "./apropos";
 import Services from "./services";
 import Contact from "./contact";
 import Realisations from "./realisations";
