@@ -11,9 +11,10 @@ export default function Layout({ children }) {
             <NavBar />
             <Head>
                 <title>{router.pathname.substring(1)}</title>
+                <meta name="description" content="DPL site web" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <main>{children}</main>
+            <main >{children}</main>
             <Footer/>
         </>
     )

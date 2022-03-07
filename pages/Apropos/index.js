@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Apropos() {
   return (
-    <div>A propos component</div>
+    <div>À propos component</div>
   )
 }
