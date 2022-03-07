@@ -14,7 +14,7 @@ export default function NavBar() {
         {navLinks.map((link, index) => {
           return (
             <Link href={link.path} key={index} activeClassName="active">
-              <li>
+              <li >
                 <a href="#" className={router.pathname == link.path ? navBar.active : ""}> {/* Toggle active class when router path change */ }
                   {link.name}
                 </a>

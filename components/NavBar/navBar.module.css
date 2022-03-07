@@ -27,25 +27,43 @@
 }
 
 .nav ul li a{
+    transition: all 0.2s ease-in-out;
     position: relative;
-    display: block;
-    min-height: 100% !important;
     display: block;
     color: white;
     padding: 1.7rem 1rem;
     margin: 0 .1rem;
+
+/*  old border-bottom
+
+    border-bottom: 5px #ff0e1e00 solid;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px; */
 }
 
-.nav ul li a:hover{
-    color: red !important;
-    border-bottom: 5px red solid;
+.nav ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    left: 50%;
+    bottom: 0;
+    background-color: #ff0e1f;
+    transition: all ease-in-out .2s;
     border-bottom-left-radius: 5px 5px;
     border-bottom-right-radius: 5px 5px;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.nav ul li:hover > a{
+    color: #ff0e1f !important;
 }
 
 .active{
-    color: red !important;
-    border-bottom-left-radius: 5px 5px;
-    border-bottom-right-radius: 5px 5px;
-    border-bottom: 5px red solid;
+    color: #ff0e1f !important;
 }
+
