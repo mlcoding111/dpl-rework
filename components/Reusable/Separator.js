@@ -1,7 +1,10 @@
 import React from 'react'
 
-export default function Separator() {
+export default function Separator({text}) {
   return (
-    <div>_____________________________________</div>
+    <div id="separator">
+      <h3>{text}</h3>  
+    </div>
+
   )
 }

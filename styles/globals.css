@@ -17,3 +17,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#separator{
+  text-align: center;
+  background: #17161a;
+  border: 1px solid red;
+  color: red;
+  width: 100%;  
+}

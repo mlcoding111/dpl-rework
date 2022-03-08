@@ -20,22 +20,23 @@ export default function Home() {
         <section id="services">
           <Services />
         </section>
-        <Separator />
+        <Separator text="Décontamination Précision Lacroix inc"/>
 
         <section id="à-propos">
           <Apropos />
         </section>
-        <Separator />
+        <Separator text="Pour plus d'informations"/>
 
         <section id="contact">
           <Contact />
         </section>
-        <Separator />
+        <Separator text="Notre équipe"/>
 
         <section id="réalisation">
           <Realisations />
         </section>
-        <Separator />
+        <Separator text="Réalisations"/>
+        
       </main>
     </div>
   );
