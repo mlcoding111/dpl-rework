@@ -5,6 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: Rubik-Bold;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 .nav{
