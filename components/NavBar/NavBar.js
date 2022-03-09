@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import Image from 'next/image'
 import { useRouter } from 'next/router';
 
 import navBar from "./navBar.module.css";
 import { navLinks } from "../../utils/data";
+import Logo from '../../public/images/asset.svg'
 
 export default function NavBar() {
   const router = useRouter();
@@ -28,7 +30,11 @@ export default function NavBar() {
   return (
     <div className={navBar.wrapper}>
     <nav className={navBar.nav}>
-      
+
+    <div className={navBar.brand}>
+          <Image src={Logo} height={100} width={100} />
+    </div>
+
       <ul>
         {/* Mobile Nav Toggler */}
         <div className={`${navBar.toggler}  ${toggled ? navBar.open : ''}`} onClick={toggleOpen}>
@@ -36,6 +42,7 @@ export default function NavBar() {
               <span></span>
               <span></span>
         </div>
+
         {/* Desktop Nav */}
         {navLinks.map((link, index) => {
           return (
@@ -51,7 +58,7 @@ export default function NavBar() {
       </ul>
 
     </nav>
-    
+
      {/* Mobile Nav */}
     <nav className={navBar.mobileNav}>
       <ul>
