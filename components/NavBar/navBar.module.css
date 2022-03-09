@@ -19,7 +19,7 @@
 .nav{
     position: relative;
     height: 120px;
-    background: #17161a;
+    background: var(--primary-black);
 }
 
 

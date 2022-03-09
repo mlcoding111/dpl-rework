@@ -10,7 +10,7 @@ body {
 /* Variables */
 
 :root{
-  --primary-black: #17161a;
+  --primary-black: #0e0e0f;
   --footer-clr: rgba(15,15,15,.8);
   --primary-red: #ff0e1f;
 }
@@ -55,11 +55,18 @@ a {
 }
 
 #separator{
-  text-align: center;
-  background: #17161a;
-  border: 1px solid red;
-  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background: #610000;
+  color: white;
+  min-height: 100%;
   width: 100%;  
+}
+/* Utilities class */
+
+.mt-0{
+  margin: 0 !important;
 }
 
 /* FONTS */
