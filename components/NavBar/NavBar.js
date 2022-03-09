@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 import navBar from "./navBar.module.css";
 import { navLinks } from "../../utils/data";
-import Logo from '../../public/images/asset.svg'
+import Logo from '../../public/images/brand.svg'
 
 export default function NavBar() {
   const router = useRouter();
@@ -17,16 +17,19 @@ export default function NavBar() {
     !toggled ? setToggled(true) : setToggled(false) // Handle className
     let cc = document.querySelector(`.${navBar.mobileNav} ul`)
     console.log(cc)
-
     if(toggled){
       setToggled(false)
       cc.style.left = "-100%"
+      cc.style.height = "0px"
+
     }else{
       setToggled(true)
       cc.style.left = "0"
+      cc.style.height = "100%"
     }
 
   }
+
   return (
     <div className={navBar.wrapper}>
     <nav className={navBar.nav}>

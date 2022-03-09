@@ -15,6 +15,7 @@
     text-transform: uppercase;
 }
 
+
 .nav{
     position: relative;
     height: 120px;
@@ -107,16 +108,17 @@
     .toggler{
         align-items: flex-start;
         display: block !important;
-    }
+    }    
 }
 
 .mobileNav ul{
+    position: relative;
     flex-direction: column;
     transition: all 0.2s ease-in-out;
-    position: relative;
     left: -100%;
     background: var(--primary-black);
     margin: 0;
+    height: 0;
 }
 
 
