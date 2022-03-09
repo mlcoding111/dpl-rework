@@ -14,6 +14,7 @@ export default function Layout({ children }) {
                 <meta name="description" content="DPL site web" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
+
             <main>{children}</main>
             <Footer/>
         </>

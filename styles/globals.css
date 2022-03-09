@@ -15,6 +15,30 @@ body {
   --primary-red: #ff0e1f;
 }
 
+/* Typography */
+
+h1, p, h3 {
+  font-size: clamp(var(--min), var(--val), var(--max));
+}
+
+h1 {
+  --min: 2em;
+  --val: 5vw;
+  --max: 3em;
+}
+
+p {
+  --min: 1em;
+  --val: 2.5vw;
+  --max: 2em;
+}
+
+h3{
+  --min: 1.2em;
+  --val: 2.5vw;
+  --max: 1.6em;
+}
+
 body{
   background: linear-gradient(to right,#17161a,#242124 50%,#17161a);
 }
