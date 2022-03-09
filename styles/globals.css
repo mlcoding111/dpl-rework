@@ -7,6 +7,18 @@ body {
   font-family: Rubik;
 }
 
+/* Variables */
+
+:root{
+  --primary-black: #17161a;
+  --footer-clr: rgba(15,15,15,.8);
+  --primary-red: #ff0e1f;
+}
+
+body{
+  background: linear-gradient(to right,#17161a,#242124 50%,#17161a);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -26,6 +38,7 @@ a {
   width: 100%;  
 }
 
+/* FONTS */
 @font-face {
   font-family: Rubik;
   src: url("../public/fonts/Rubik-Regular.ttf");
@@ -39,5 +52,11 @@ a {
   src: url("../public/fonts/Rubik-Bold.ttf");
   font-style: normal;
   font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: Rubik-Semi-Bold;
+  src: url("../public/fonts/Rubik-SemiBold.ttf");
+  font-style: bold;
   font-display: swap;
 }
