@@ -30,7 +30,7 @@ const ServiceCard = ({description, title, src}) => {
                 <Card.Title className="text-center">{title}</Card.Title>
                 </Card.Header>
                 <Card.Body className="text-center p-3">
-                    <Image src={Svg(title)} height={150} width={title == "Décontamination" ? 125 : 150}  className={title == "Wetblast" ? "wet-card" : ""}  id="card-svg"/>    
+                    <Image src={Svg(title)} height={150} alt="Service image" width={title == "Décontamination" ? 125 : 150}  className={title == "Wetblast" ? "wet-card" : ""}  id="card-svg"/>    
                     <hr className="w-100 white"></hr>
                     <Card.Text>
                         <p className="description">{description}</p>

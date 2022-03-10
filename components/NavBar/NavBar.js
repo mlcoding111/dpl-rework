@@ -35,7 +35,7 @@ export default function NavBar() {
     <nav className={navBar.nav}>
 
     <div className={navBar.brand}>
-          <Image src={Logo} height={100} width={100} />
+          <Image src={Logo} height={100} width={100} alt="Nav Brand"/>
     </div>
 
       <ul>
