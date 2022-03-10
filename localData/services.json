@@ -1,0 +1,19 @@
+{
+    "services":[
+        {
+            "title": "Démolition",
+            "src": "../../assets/svg/Layer 2.svg",
+            "description": "Services de démolition de qualité"
+        },
+        {
+            "title": "Décontamination",
+            "src": "../../assets/svg/BioHazard.svg",
+            "description": "Décontamination d’amiante, plomb, moisissure, silice ou même des travaux non contaminés."
+        },
+        {
+            "title": "Wetblast",
+            "src": "../../assets/svg/Wetblast.svg",
+            "description": "Un procédé de jet abrasif à base de verre recyclé et d’eau qui ne génère pas de poussière. Ce procédé est utile pour enlever la rouille, la peinture, les grafititis sur toute surface quelconque."
+        }
+    ]
+}

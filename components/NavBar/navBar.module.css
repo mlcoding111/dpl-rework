@@ -15,9 +15,9 @@
     text-transform: uppercase;
 }
 
-
 .nav{
     position: relative;
+    top: 0px;
     height: 120px;
     background: var(--primary-black);
 }

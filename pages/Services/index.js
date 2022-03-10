@@ -1,7 +1,15 @@
-import React from 'react'
+import React from "react";
+import { Row, Col, Container } from "react-bootstrap";
+import ServicesList from "./ServiceList";
 
 export default function Services() {
   return (
-    <div>Services</div>
-  )
+    <section id="services">
+ 
+        <h2>NOS SERVICES</h2>
+        <hr className="w-25 mb-3"></hr>
+        <ServicesList />
+     
+    </section>
+  );
 }

@@ -11,10 +11,10 @@ import Separator from "../components/Reusable/Separator";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div >
       {/*  Header */}
       <Header />
-      <Separator/>
+      {/* <Separator/> */}
       {/*  Main content of hompage */}
       <main className={styles.main}>
         <section id="services">

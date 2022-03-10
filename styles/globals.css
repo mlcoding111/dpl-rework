@@ -1,11 +1,23 @@
+html, body, .App, #root{
+  min-height: 100vh !important;
+}
+
 html,
 body {
-  height: 100%;
   padding: 0;
   margin: 0;
   font-size: 16px;
   font-family: Rubik;
 }
+
+hr{
+  width: 50%;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  background: white !important;
+  color: white !important;
+}
+
 
 /* Variables */
 
@@ -13,11 +25,12 @@ body {
   --primary-black: #0e0e0f;
   --footer-clr: rgba(15,15,15,.8);
   --primary-red: #ff0e1f;
+  --darker-red: #9b000a;
 }
 
 /* Typography */
 
-h1, p, h3 {
+h1, p, h3, h2 {
   font-size: clamp(var(--min), var(--val), var(--max));
 }
 
@@ -31,6 +44,12 @@ p {
   --min: 1em;
   --val: 2.5vw;
   --max: 2em;
+}
+
+h2{
+  --min: 1.5em;
+  --val: 4vw;
+  --max: 2.5em;
 }
 
 h3{
@@ -58,12 +77,39 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;  
-  background: #610000;
-  color: white;
+  background: var(--footer-clr);
+  color: rgb(255, 255, 255);
   min-height: 100%;
+  padding: 1rem;
   width: 100%;  
+  text-decoration: solid;
+  letter-spacing: 1.2px;
+  font-family: Rubik-Bold !important;
 }
 /* Utilities class */
+
+/* .row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.row > *{
+  flex: 1 1 33em;
+  margin-right: auto;
+  border: 2px solid red;
+} */
+
+section{
+  padding: 1.2rem;
+  min-height: 100%;
+  text-align: center;
+  color: white;
+
+}
+
 
 .mt-0{
   margin: 0 !important;
@@ -76,6 +122,13 @@ a {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik-Light;
+  src: url("../public/fonts/Rubik-Light.ttf");
+  font-style: normal;
+  font-weight: 100;
 }
 
 @font-face {

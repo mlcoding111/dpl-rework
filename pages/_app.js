@@ -1,5 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/globals.css'
+import '../styles/card.css'
 import Layout from '../components/layout'
+
 
 function MyApp({ Component, pageProps }) {
   return (
