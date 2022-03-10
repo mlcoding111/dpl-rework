@@ -18,6 +18,12 @@ hr{
   color: white !important;
 }
 
+.long-text{
+  font-size: 1.3rem;
+  text-align: left;
+  font-size: clamp((.9em), (1.6vw), (1.3em));
+}
+
 
 /* Variables */
 
