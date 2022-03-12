@@ -17,6 +17,7 @@ export default function Home() {
       {/* <Separator/> */}
       {/*  Main content of hompage */}
       <main className={styles.main}>
+        <Separator/>
         <section id="services">
           <Services />
         </section>

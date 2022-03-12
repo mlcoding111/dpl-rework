@@ -10,7 +10,7 @@ export default function Apropos() {
         <Row className="d-flex  text-left p-2 ml-5">
           <Col lg={{ span: 5, offset: 1 }} md="12"  className="d-flex flex-column  mt-5">
             <h2 className="">À-PROPOS DE </h2>
-            <h3>Deconstruction lacroix inc.</h3>
+            <h3> Décontamination Précision Lacroix inc</h3>
             <hr className="w-100" />
             <h3 className="mt-3">Mettre son expérience à profit</h3>
             <p className="long-text mt-2">
