@@ -35,7 +35,7 @@ export default function Home() {
         <section id="realisation">
           <Realisations />
         </section>
-        <Separator text="Notre équipe"/>
+        {/* <Separator text="Notre équipe"/> */}
         
       </main>
     </div>

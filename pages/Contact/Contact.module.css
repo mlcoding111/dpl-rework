@@ -5,6 +5,7 @@
     position: relative;
     overflow: hidden;
     margin: .5rem;
+    background: rgba(0, 0, 0, .5);
 }
 
 .bannerImg{
@@ -17,7 +18,18 @@
 .profileImg{
     width: 8rem;
     clip-path: circle(60px at center);
-    margin-top: 4.5rem;
+    margin-top: 2.5rem;
+}
+
+.info{
+    /* border: 2px solid red; */
+    width: 50%;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.info > * {
+    margin: 5px 10px;
 }
 
 .name{
@@ -25,7 +37,7 @@
 }
 
 .description{
-    margin: 1rem 2rem;
+    margin: 1.2rem 0rem;
     font-size: 1rem;
 }
 
@@ -39,14 +51,15 @@
     padding: 1rem;
 }
 
-@media screen and(min-width: 500px){
-    .wrapper-grid{
-        grid-template-columns: repeat(2, 1fr);
+
+@media only screen and (max-width: 1200px){
+    .info{
+        width: 75% !important;
     }
 }
 
-@media screen and(min-width: 760px){
-    .wrapper-grid{
-        grid-template-columns: repeat(3, 1fr);
+@media only screen and (max-width: 550px){
+    .info{
+        width: 100% !important;
     }
 }
