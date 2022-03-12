@@ -4,7 +4,7 @@
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
-    margin: .5rem;
+
     background: rgba(0, 0, 0, .5);
 }
 
@@ -29,7 +29,7 @@
 }
 
 .info > * {
-    margin: 5px 10px;
+    margin: 8px 15px;
 }
 
 .name{
@@ -52,13 +52,17 @@
 }
 
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1400px){
     .info{
         width: 75% !important;
+    }
+    .container > hr{
+        width: 100% !important;
     }
 }
 
 @media only screen and (max-width: 550px){
+
     .info{
         width: 100% !important;
     }

@@ -7,8 +7,8 @@ import { Col, Container, Row } from "react-bootstrap";
 const ContactCardList = () => {
   return (
     <>
-     <Row>
-         <Col md="6">
+     <Row className="d-flex justify-content-center">
+         <Col md="6" lg="5">
         <ContactCard
           city="Montreal, Québec"
           name="Vanessa Roy Cardinal"
@@ -18,7 +18,7 @@ const ContactCardList = () => {
           avatarSrc="https://www.bootdey.com/img/Content/user_2.jpg"
         />
         </Col>
-        <Col md="6">
+        <Col md="6" lg="5">
         <ContactCard
           city="Montreal, Québec"
           name="Yann Lacroix"
