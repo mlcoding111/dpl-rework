@@ -30,12 +30,12 @@ export default function Home() {
         <section id="contact">
           <Contact />
         </section>
-        <Separator text="Notre équipe"/>
 
-        <section id="réalisation">
+        <Separator text="Réalisations"/>
+        <section id="realisation">
           <Realisations />
         </section>
-        <Separator text="Réalisations"/>
+        <Separator text="Notre équipe"/>
         
       </main>
     </div>
