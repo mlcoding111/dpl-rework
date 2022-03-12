@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/Header/Header";
 import Apropos from "./apropos";
 import Services from "./services";
-import Contact from "./contact";
+import Contact from "./contact/index";
 import Realisations from "./realisations";
 
 import Separator from "../components/Reusable/Separator";

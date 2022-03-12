@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
-import ContactCardList from "./ContactCardList";
+import ContactCardList from "../ContactCardList";
 
 import styles from './Contact.module.css'
 
