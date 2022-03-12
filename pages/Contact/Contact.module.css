@@ -4,7 +4,7 @@
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
-
+    margin: 1rem 0;
     background: rgba(0, 0, 0, .5);
 }
 

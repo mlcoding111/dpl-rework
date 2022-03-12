@@ -23,7 +23,7 @@ export default function Realisations() {
   return (
     <section id="realisations">
     <Container >
-    <Row className="d-flex  text-left p-2 ml-5">
+    <Row className="d-flex text-left p-2">
           <Col lg={{ span: 12, offset: 0 }} className="d-flex flex-column  mt-5">
             <h2 className="">RÉALISATIONS</h2>
             <hr className="w-100" />

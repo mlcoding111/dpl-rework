@@ -7,8 +7,8 @@ export default function Apropos() {
   return (
     <section id="a-propos">
       <Container fluid>
-        <Row className="d-flex  text-left p-2 ml-5">
-          <Col lg={{ span: 5, offset: 1 }} md="12"  className="d-flex flex-column  mt-5">
+        <Row className="d-flex  text-left ml-5">
+          <Col lg={{ span: 5, offset: 1 }} md="12"  className="d-flex flex-column mt-2">
             <h2 className="">À-PROPOS DE </h2>
             <h3> Décontamination Précision Lacroix inc</h3>
             <hr className="w-100" />

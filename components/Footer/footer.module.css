@@ -3,7 +3,45 @@
     flex: 1;
     padding: 2rem 0;
     border-top: 1px solid #eaeaea;
-    background: var(--footer-clr);
+    background: var(--darker-red);
+    height: 100%;
+}
+
+.footer nav{
+    width: 100%;
+    display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.footer p{
+    color: white;
+    font-size: .9rem;
+}
+
+.footer ul{
+    list-style: none;
+    padding-top: 1rem;
+}
+
+.footer li a{
+    margin: 1rem;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 530px){
+    .footer nav{
+        text-align: left;
+    }
+    .footer ul{
+        flex-direction: column;
+
+    }
 }
