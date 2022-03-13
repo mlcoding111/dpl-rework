@@ -11,7 +11,7 @@ import Separator from "../components/Reusable/Separator";
 
 export default function Home() {
   return (
-    <div >
+    <>
       {/*  Header */}
       <Header />
       {/* <Separator/> */}
@@ -39,7 +39,7 @@ export default function Home() {
         {/* <Separator text="Notre équipe"/> */}
         
       </main>
-    </div>
+    </>
   );
 }
 

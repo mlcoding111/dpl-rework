@@ -7,11 +7,36 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
+
 }
 
-html,body{
-  overflow-x: hidden;
+/* Variables */
+
+:root{
+  --primary-black: #0e0e0f;
+  --footer-clr: rgba(15,15,15,.8);
+  --primary-red: #ff0e1f;
+  --darker-red: #9b000a;
 }
+
+body{
+  overflow-x: hidden !important;
+  scrollbar-color: red !important;
+}
+
+body::-webkit-scrollbar{
+  width: 11px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-red);
+  /* border-radius: 6px; */
+  border: 3px solid var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb:hover{
+  background-color: var(--darker-red);
+}
+
 
 hr{
   width: 50%;
@@ -28,14 +53,7 @@ hr{
 }
 
 
-/* Variables */
 
-:root{
-  --primary-black: #0e0e0f;
-  --footer-clr: rgba(15,15,15,.8);
-  --primary-red: #ff0e1f;
-  --darker-red: #9b000a;
-}
 
 /* Typography */
 
@@ -57,7 +75,7 @@ p {
 
 h2{
   --min: 1.5em;
-  --val: 4vw;
+  --val: 4.5vw;
   --max: 2.5em;
   /* text-shadow: 3px 3px 10px var(--darker-red); */
 }
@@ -184,5 +202,20 @@ section{
 @media only screen and (max-width: 500px){
   section{
     padding: 1rem 0rem;
+  }
+}
+
+.main-wrapper{
+  overflow-x: hidden;
+}
+
+@keyframes navLinkFade{
+  from{
+      opacity: 0 !important;
+      transform: translate(50px);
+  }
+  to{
+      opacity: 1 !important;
+      transform: translate(0px);
   }
 }

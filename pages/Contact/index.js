@@ -21,9 +21,7 @@ export default function Contact() {
         <Row className="mt-5">
           <Col md="12" className="pl-5 text-center">
             <hr className="w-100"></hr>
-            <a href="mailto:Dplacroix@outlook.com">
-              <Button className="mailBtn">Envoyer un courriel</Button>
-            </a>
+
           </Col>
         </Row>
       </Container>

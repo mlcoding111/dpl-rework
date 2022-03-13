@@ -7,17 +7,18 @@ import { useRouter } from 'next/router'
 export default function Layout({ children }) {
     const router = useRouter();
     return (
-        <>
-            <NavBar />
+        <div className="main-wrapper">
+         
             <Head>
                 <title>{router.pathname.substring(1)}</title>
                 <meta name="description" content="DPL site web" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 
             </Head>
-
+            
+            <NavBar />
             <main>{children}</main>
             <Footer/>
-        </>
+        </div>
     )
   }
