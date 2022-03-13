@@ -21,7 +21,7 @@ export default function Footer() {
             <Link href={link.path} key={index} activeClassName="active">
               <li >
                 <a href="#" > {/* Toggle active class when router path change */ }
-                  - {link.name}
+                  {link.name}
                 </a>
               </li>
             </Link>

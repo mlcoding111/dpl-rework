@@ -32,7 +32,7 @@ export default function Home() {
           <Contact />
         </section>
 
-        <Separator text="Réalisations"/>
+        <Separator/>
         <section id="realisation">
           <Realisations />
         </section>

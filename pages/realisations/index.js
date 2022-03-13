@@ -3,34 +3,27 @@ import { Container, Col, Row } from 'react-bootstrap';
 import ImageGallery from 'react-image-gallery';
 import Images from '../../utils/workImages'
 
-const images = [
-  {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/'
-  },
-];
-
 
 export default function Realisations() {
+
+  const resize = () => {
+    const gallery = document.querySelector('.image-gallery')
+    gallery.classList.toggle("flex-center")
+  }
+
   return (
     <section id="realisations">
-    <Container >
-    <Row className="d-flex text-left p-2">
-          <Col lg={{ span: 12, offset: 0 }} className="d-flex flex-column  mt-5">
+          <Row className="d-flex text-left p-1 d-flex justify-content-center align-items-center">
+          <Col lg={{ span: 12, offset: 0 }} className="d-flex flex-column my-3">
             <h2 className="">RÉALISATIONS</h2>
-            <hr className="w-100" />
+            <hr className="w-50" />
           </Col>
-        </Row>
-        <ImageGallery items={Images} lazyLoad thumbnail/>
-        {console.log(Images)}
+      </Row>
+    <Container >
+      <Row className="d-flex text-left p-2 d-flex justify-content-center align-items-center">
+          <ImageGallery items={Images} lazyLoad thumbnail showBullets showIndex showNav onScreenChange={resize}/>       
+      </Row>
+
     </Container>
     </section>
 

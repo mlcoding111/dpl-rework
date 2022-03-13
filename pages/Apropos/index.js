@@ -7,11 +7,15 @@ export default function Apropos() {
   return (
     <section id="a-propos">
       <Container fluid>
+        <Row className="my-5">
+        <h2 className="">À-PROPOS</h2>
+        <hr className="w-50" />
+        </Row>
         <Row className="d-flex  text-left ml-5">
           <Col lg={{ span: 5, offset: 1 }} md="12"  className="d-flex flex-column mt-2">
-            <h2 className="">À-PROPOS DE </h2>
-            <h3> Décontamination Précision Lacroix inc</h3>
-            <hr className="w-100" />
+        
+            {/* <h3> Décontamination Précision Lacroix inc</h3> */}
+
             <h3 className="mt-3">Mettre son expérience à profit</h3>
             <p className="long-text mt-2">
               Décontamination Précision Lacroix est une jeune entreprise qui
