@@ -7,7 +7,7 @@ import { Container, Row } from 'react-bootstrap'
 const ServicesList = () => {
     return (
         <Container>
-            <Row className="mt-5 h-100">
+            <Row className="mt-5 h-100" >
                 {ServicesData.services.map((index, i) => (
                     <ServiceCard title={index.title} src={index.src} description={index.description} key={i}/>
                 ))}

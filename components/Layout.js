@@ -7,8 +7,7 @@ import { useRouter } from 'next/router'
 export default function Layout({ children }) {
     const router = useRouter();
     return (
-        <div className="main-wrapper">
-         
+        <>         
             <Head>
                 <title>{router.pathname.substring(1)}</title>
                 <meta name="description" content="DPL site web" />
@@ -19,6 +18,6 @@ export default function Layout({ children }) {
             <NavBar />
             <main>{children}</main>
             <Footer/>
-        </div>
+        </>
     )
   }

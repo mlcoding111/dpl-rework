@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <section id="contact" className={styles.contact}>
       <Container>
-        <Row className="text-center">
+        <Row className="text-center" data-aos="fade-right">
           <h2>CONTACTEZ-NOUS</h2>
           <hr className="w-25 mb-5"></hr>
           <h5>N'hésitez pas a nous contacter !</h5>

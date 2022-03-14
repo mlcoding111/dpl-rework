@@ -13,7 +13,7 @@ const ContactCard = ({name, mail, number, avatarSrc, role}) => {
                 {/* <div className={Styles.bannerImg}></div> */}
                 <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" className={Styles.profileImg}></img>
                 <h1 className={Styles.name}>{name}</h1>
-                <p className={Styles.description}>Directrice général</p>
+                <p className={Styles.description}>{role}</p>
                 <hr></hr>
                 <div className="d-flex justify-content-center ">
 

@@ -24,7 +24,7 @@ const ServiceCard = ({description, title, src}) => {
     }
 
     return (
-        <Col lg="4" sm="12" className="mb-5">
+        <Col lg="4" sm="12" className="mb-5" data-aos="zoom-out-right" data-aos-duration="500">
             <Card >
                 <Card.Header>
                 <Card.Title className="text-center">{title}</Card.Title>

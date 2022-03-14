@@ -21,6 +21,7 @@ body {
 }
 
 body{
+  overflow-x: clip !important;
   scrollbar-color: red !important;
 }
 
@@ -223,10 +224,6 @@ section{
   section{
     padding: 1rem 0rem;
   }
-}
-
-.main-wrapper{
-  overflow-x: hidden;
 }
 
 @keyframes navLinkFade{

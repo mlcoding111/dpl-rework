@@ -13,14 +13,14 @@ export default function Realisations() {
 
   return (
     <section id="realisations">
-          <Row className="d-flex text-left p-1 d-flex justify-content-center align-items-center">
+          <Row className="d-flex text-left p-1 d-flex justify-content-center align-items-center" data-aos="zoom-in-left">
           <Col lg={{ span: 12, offset: 0 }} className="d-flex flex-column my-3">
             <h2 className="">RÉALISATIONS</h2>
             <hr className="w-50" />
           </Col>
       </Row>
-    <Container >
-      <Row className="d-flex text-left p-2 d-flex justify-content-center align-items-center">
+    <Container data-aos="zoom-in-left">
+      <Row className="d-flex text-left p-2 d-flex justify-content-center align-items-center" >
           <ImageGallery items={Images} lazyLoad thumbnail showBullets showIndex showNav onScreenChange={resize}/>       
       </Row>
 
