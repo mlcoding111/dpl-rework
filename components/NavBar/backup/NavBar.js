@@ -12,33 +12,37 @@ export default function NavBar() {
 
   const [toggled, setToggled] = React.useState(false);
 
+  React.useEffect(() => {
 
-  React.useEffect(()=>{
-    let scrolledNav = document.querySelector('#scrolled')
-    
-    const onScroll = e => {
-      let scrollValue = e.target.documentElement.scrollTop
-      console.log(scrollValue)
-      if(scrollValue > 100){
-   
+    let scrolledNav = document.querySelector("#scrolled");
+
+    const onScroll = (e) => {
+      let scrollValue = e.target.documentElement.scrollTop;
+      console.log(scrollValue);
+      if (scrollValue > 100) {
       }
-    }
-    window.addEventListener('scroll', onScroll)
-  },[])
+    };
+    window.addEventListener("scroll", onScroll);
+  }, []);
 
   // Handle mobile nav behaviors
   const toggleOpen = () => {
     !toggled ? setToggled(true) : setToggled(false); // Handle className
-    let cc = document.querySelector(`.${navBar.mobileNav} ul`);
-    if (toggled) {
-      setToggled(false);
-      cc.style.left = "-100%";
-      cc.style.height = "0px";
-    } else {
-      setToggled(true);
-      cc.style.left = "0";
-      cc.style.height = "100%";
-    }
+
+    const nav = document.querySelector(`.${navBar.navLinks}`)
+    const navLinks = document.querySelectorAll(`.${navBar.navLinks} li`)
+
+    nav.classList.toggle(navBar.navActive)
+
+    // navLinks.forEach((link, index) => {
+    //   if(link.style.animation){
+    //     link.style.animation = ''
+    //   }else{
+    //     link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + .5}s`
+    //   } 
+    // })
+
+
   };
 
   return (
@@ -48,27 +52,16 @@ export default function NavBar() {
           <Image src={Logo} height={100} width={100} alt="Nav Brand" />
         </div>
 
-        <ul>
-          {/* Mobile Nav Toggler */}
-          <div
-            className={`${navBar.toggler}  ${toggled ? navBar.open : ""}`}
-            onClick={toggleOpen}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-
+        <ul className={navBar.navLinks}>
           {/* Desktop Nav */}
           {navLinks.map((link, index) => {
             return (
               <Link href={link.path} key={index} activeClassName="active">
-                <li className={
-                      router.pathname == link.path ? navBar.active : ""
-                    }>
-                  <a
-                    href="#"
-                  >
+                <li
+                  className={router.pathname == link.path ? navBar.active : ""}
+                  onClick={toggleOpen}
+                >
+                  <a href="#">
                     {" "}
                     {/* Toggle active class when router path change */}
                     {link.name}
@@ -78,35 +71,18 @@ export default function NavBar() {
             );
           })}
         </ul>
-      </nav>
-
-      {/* Mobile Nav */}
-      <nav className={navBar.mobileNav}>
-        <ul>
-          {navLinks.map((link, index) => {
-            return (
-              <Link href={link.path} key={index} activeClassName="active">
-                <li>
-                  <a
-                    href="#"
-                    className={
-                      router.pathname == link.path ? navBar.active : ""
-                    }
-                    onClick={toggleOpen}
-                  >
-                    {" "}
-                    {/* Toggle active class when router path change */}
-                    {link.name}
-                  </a>
-                </li>
-              </Link>
-            );
-          })}
-        </ul>
+        {/* Mobile Nav Toggler */}
+        <div
+          className={`${navBar.toggler}  ${toggled ? navBar.open : ""}`}
+          onClick={toggleOpen}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
 
       {/* Scrolled nav */}
-
     </>
   );
 }

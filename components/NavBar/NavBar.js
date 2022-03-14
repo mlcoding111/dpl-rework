@@ -49,10 +49,19 @@ export default function NavBar() {
     <>
       <nav className={navBar.nav}>
         <div className={navBar.brand}>
-          <Image src={Logo} height={100} width={100} alt="Nav Brand" />
+          <Image src={Logo} height={95} width={115} alt="Nav Brand" />
         </div>
-
-        <ul className={navBar.navLinks}>
+        {/* Mobile Nav Toggler */}
+        <div
+          className={`${navBar.toggler}  ${toggled ? navBar.open : ""}`}
+          onClick={toggleOpen}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className={navBar.navLinks}>
+        <ul>
           {/* Desktop Nav */}
           {navLinks.map((link, index) => {
             return (
@@ -71,15 +80,8 @@ export default function NavBar() {
             );
           })}
         </ul>
-        {/* Mobile Nav Toggler */}
-        <div
-          className={`${navBar.toggler}  ${toggled ? navBar.open : ""}`}
-          onClick={toggleOpen}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
         </div>
+
       </nav>
 
       {/* Scrolled nav */}

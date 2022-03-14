@@ -10,6 +10,10 @@ body {
   overflow-x: clip !important;
 }
 
+body{
+  background: #17161a !important;
+}
+
 /* Variables */
 
 :root{
@@ -18,7 +22,22 @@ body {
   --footer-clr: rgba(15,15,15,.8);
   --primary-red: #ff0e1f;
   --darker-red: #9b000a;
+
+  /* Variables for the arrow separator clip */
+  --size: 50px;   /* size of the cut */
+  --gap: 10px;    /* the gap */
+  --angle: 90deg; /* angle of the arrow */
 }
+
+
+.top {
+  clip-path: polygon(0 0,100% 0,100% calc(100% - var(--size)),calc(50% + tan(var(--angle)/2)*var(--size)) calc(100% - var(--size)),50% 100%,calc(50% - tan(var(--angle)/2)*var(--size)) calc(100% - var(--size)),0 calc(100% - var(--size)));
+}
+.bottom {
+  clip-path: polygon(0 0,calc(50% - tan((180deg - var(--angle))/4)*var(--gap) - tan(var(--angle)/2)*var(--size)) 0,50% calc(var(--size) + (1/sin(var(--angle)/2) - 1)*var(--gap)),calc(50% + tan((180deg - var(--angle))/4)*var(--gap) + tan(var(--angle)/2)*var(--size)) 0,100% 0,100% 100%,0 100%);
+  margin-top: calc(var(--gap) - var(--size));
+}
+
 
 body{
   overflow-x: clip !important;
@@ -106,7 +125,7 @@ a {
 /* Utilities class */
 
 
-#separator{
+#separator{  
   display: flex;
   justify-content: center;
   align-items: center;  
@@ -118,6 +137,8 @@ a {
   text-decoration: solid;
   letter-spacing: 1.2px;
   font-family: Rubik-Bold !important;
+  clip-path: polygon(0 0, 100% 0%, 100% 79%, 51% 100%, 0 80%);
+
 }
 
 /* Sections */
@@ -129,7 +150,7 @@ section{
   color: white;
   display: flex;
   flex-direction: column;
-  background: var(--section-clr);
+  /* background: var(--section-clr); */
 }
 
 #realisations{

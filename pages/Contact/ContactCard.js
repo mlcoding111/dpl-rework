@@ -24,7 +24,7 @@ const ContactCard = ({name, mail, number, avatarSrc, role}) => {
                 </div>
            
 
-                <button className={Styles.btn}>Follow</button>
+                <button className={Styles.btn}>Contact</button>
             </div>
 
     )
