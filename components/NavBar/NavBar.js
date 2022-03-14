@@ -62,7 +62,7 @@ export default function NavBar() {
           {/* Desktop Nav */}
           {navLinks.map((link, index) => {
             return (
-              <Link href={link.path} key={index} activeClassName="active">
+              <Link href={link.path} key={index} activeClassName="active" passHref>
                 <li
                   className={router.pathname == link.path ? navBar.active : ""}
                   onClick={toggleOpen}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, Col, Row } from 'react-bootstrap'
-
+import Image from 'next/image'
 import { IoMailOutline, IoPhonePortraitSharp } from "react-icons/io5";
 import {FaPhoneAlt} from 'react-icons/fa'
 
@@ -11,7 +11,7 @@ const ContactCard = ({name, mail, number, avatarSrc, role}) => {
 
            <div className={Styles.container}>
                 {/* <div className={Styles.bannerImg}></div> */}
-                <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" className={Styles.profileImg}></img>
+                <Image src="https://www.w3schools.com/bootstrap4/img_avatar3.png" className={Styles.profileImg} alt="contact-image"></Image>
                 <h1 className={Styles.name}>{name}</h1>
                 <p className={Styles.description}>{role}</p>
                 <hr></hr>
