@@ -69,6 +69,7 @@ hr{
 .long-text{
   text-align: left;
   font-size: clamp((1em), (1.4vw), (1.2em));
+  padding: 1rem;
 }
 
 
@@ -93,14 +94,14 @@ p {
 }
 
 h2{
-  --min: 2em;
+  --min: 1.6em;
   --val: 4.5vw;
-  --max: 2.5em;
+  --max: 2.2em;
   /* text-shadow: 3px 3px 10px var(--darker-red); */
 }
 
 h3{
-  --min: 1.4em;
+  --min: 1.3em;
   --val: 2.5vw;
   --max: 1.8em;
   /* text-shadow: 3px 3px 5px red; */
@@ -133,6 +134,7 @@ a {
   min-height: 100%;
   padding: 1rem;
   width: 100%;  
+  text-align: center !important;
   text-decoration: solid;
   letter-spacing: 1.2px;
   font-family: Rubik-Bold !important;
@@ -244,6 +246,12 @@ section{
 @media only screen and (max-width: 500px){
   section{
     padding: 3rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 360px){
+  section{
+    padding: 3rem .4rem;
   }
 }
 
