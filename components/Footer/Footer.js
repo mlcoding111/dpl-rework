@@ -34,7 +34,7 @@ export default function Footer() {
               <li><IoMailSharp/> <span>Dplacroix@outlook.com</span></li>
             </ul>
             <ul>
-              <li><MdPhone/> <span>819-993-8686</span></li>
+              <li><MdPhone/> <span>819-993-8686</span> | <span>819-446-1694</span></li>
             </ul>
           </Col>
           <hr></hr>
