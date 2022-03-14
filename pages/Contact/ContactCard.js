@@ -22,9 +22,7 @@ const ContactCard = ({name, mail, number, avatarSrc, role}) => {
                     <FaPhoneAlt size={"2em"}/> {number}<br/>                    
                 </div>
                 </div>
-           
-
-                <button className={Styles.btn}>Contact</button>
+                <a href="mailto:Dplacroix@outlook.com"><button className={Styles.btn}>Contact</button></a>
             </div>
 
     )

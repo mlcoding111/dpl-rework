@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link'
 import Image from "next/image";
 import { Col, Row, Container } from "react-bootstrap";
 import img from "../../public/images/truck.jpg";
@@ -36,8 +37,11 @@ export default function Apropos() {
               Nous offrons un service professionnel qui couvre tout le Québec. Pour voir les services disponible,
               veuillez consulter nos services offerts.
             </p>
+            <Link href="/services">
+            <button className={styles.btn}>Services</button>
+            </Link>
           </Col>
-          <Col lg="5" md="12" data-aos="fade-right">
+          <Col lg="5" md="12" data-aos="fade-right" className="mt-2">
             <Image src={img}></Image>
           </Col>
         </Row>

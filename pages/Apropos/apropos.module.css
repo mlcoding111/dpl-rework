@@ -9,3 +9,13 @@
 .container h3{
     color: var(--primary-red)
 }
+
+.btn{
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-red);
+    padding: 1rem;
+}

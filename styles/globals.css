@@ -238,7 +238,7 @@ section{
     
   }
   #a-propos{
-    padding: .5rem;
+    padding: 3rem 0;
   }
 }
 @media only screen and (max-width: 500px){
