@@ -4,6 +4,8 @@ import Footer from './Footer/Footer'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
+import TopMessage from './Reusable/TopMessage'
+
 export default function Layout({ children }) {
     const router = useRouter();
     return (
@@ -14,8 +16,9 @@ export default function Layout({ children }) {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 
             </Head>
-            
+            <TopMessage/>
             <NavBar />
+          
             <main>{children}</main>
             <Footer/>
         </>

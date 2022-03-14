@@ -1,0 +1,11 @@
+.topBarWrapper{
+    position: relative;
+    height: 35px;
+    background: var(--darker-red);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Rubik-Bold;
+}

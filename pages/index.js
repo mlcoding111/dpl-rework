@@ -8,6 +8,7 @@ import Contact from "./contact/index";
 import Realisations from "./realisations";
 
 import Separator from "../components/Reusable/Separator";
+import TopMessage from "../components/Reusable/TopMessage";
 
 export default function Home() {
   return (

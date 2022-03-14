@@ -10,12 +10,14 @@ import Layout from '../components/layout'
 import React from 'react';
 
 
+
 function MyApp({ Component, pageProps }) {
   React.useEffect(()=>{
     AOS.init()
   }, [])
   return (
     <Layout>
+      
       <Component {...pageProps} />
     </Layout>
   )
