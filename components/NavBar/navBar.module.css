@@ -126,8 +126,10 @@
         width: 100%;   
         flex-direction: column;
     }
+
     .navLinks li{
         text-align: center;
+        margin: 1rem;
     }
 
     .navLinks.active{

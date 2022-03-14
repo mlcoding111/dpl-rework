@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 import navBar from "./navBar.module.css";
 import { navLinks } from "../../utils/data";
-import Logo from "../../public/images/brand.svg";
+import Logo from "../../public/images/brand-logo-white.svg";
 
 export default function NavBar() {
   const router = useRouter();

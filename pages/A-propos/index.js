@@ -37,7 +37,7 @@ export default function Apropos() {
               Nous offrons un service professionnel qui couvre tout le Québec. Pour voir les services disponible,
               veuillez consulter nos services offerts.
             </p>
-            <Link href="/services" passHref>
+            <Link href="/Services" passHref>
             <button className={styles.btn}>Services</button>
             </Link>
           </Col>
