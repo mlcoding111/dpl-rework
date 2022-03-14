@@ -1,25 +1,22 @@
 import React from "react";
 import Image from "next/image";
 import { Col, Row, Container } from "react-bootstrap";
-import img from '../../public/images//truck.jpg'
+import img from "../../public/images/truck.jpg";
+import styles from './apropos.module.css'
 
 export default function Apropos() {
   return (
     <section id="a-propos">
-
       <Container fluid>
-      <h2 data-aos="zoom-in-left">À-PROPOS</h2>
-        <hr className="w-25 mb-3 " data-aos="zoom-in-left"></hr>
-        <Row className="my-5">
-        </Row>
-        <Row className="d-flex  text-left ml-5"  data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
-          <Col lg={{ span: 5, offset: 1 }} md="12"  className="d-flex flex-column mt-2" >
-        
-            {/* <h3> Décontamination Précision Lacroix inc</h3> */}
+          <h2 data-aos="zoom-in-left">À-PROPOS</h2>
+          <hr className="w-25 mb-5 " data-aos="zoom-in-left"></hr>
+          <div  className={styles.container}>
 
-            <h3>Mettre son expérience à profit<hr/></h3>
-            <p className="long-text mt-2">
+        <Row  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <Col lg={{ span: 5, offset: 1 }} md="12" >
+            {/* <h3> Décontamination Précision Lacroix inc</h3> */}
+            <h3 className="my-3">Mettre son expérience à profit<hr /></h3>
+            <p className="long-text my-4">
               Décontamination Précision Lacroix est une jeune entreprise qui
               compte une dizaine d’année d’expérience dans le domaine. Nous
               sommes une équipe dynamique qui a le soucis du travail bien fait.
@@ -30,16 +27,21 @@ export default function Apropos() {
               secteur institutionnel, commercial, industriel ou résidentiel nous
               sommes là pour vous.
             </p>
-            <h4 className="mt-2">Partout au Québec<hr/></h4>
-     
-            <p className="long-text my-1">
-              Nous offrons un service professionel dans la région de Québec
+            <h3 className="mt-5">
+              Partout au Québec
+              <hr />
+            </h3>
+
+            <p className="long-text my-4">
+              Nous offrons un service professionnel qui couvre tout le Québec. Pour voir les services disponible,
+              veuillez consulter nos services offerts.
             </p>
           </Col>
           <Col lg="5" md="12" data-aos="fade-right">
-            <Image src={img} ></Image>
+            <Image src={img}></Image>
           </Col>
         </Row>
+        </div>
       </Container>
     </section>
   );

@@ -11,7 +11,7 @@ body {
 }
 
 body{
-  background: #17161a !important;
+  background: linear-gradient(to right,#17161a,#242124 50%,#17161a);
 }
 
 /* Variables */
@@ -67,9 +67,8 @@ hr{
 }
 
 .long-text{
-  font-size: 1.3rem;
   text-align: left;
-  font-size: clamp((.9em), (1.6vw), (1.3em));
+  font-size: clamp((1em), (1.4vw), (1.2em));
 }
 
 
@@ -175,6 +174,7 @@ section{
 .image-gallery-thumbnails{
   border-top: 2px solid var(--darker-red);
   padding: 1rem !important;
+  margin-top: 2.5rem;
 }
 
 .shadow-border{
