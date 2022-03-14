@@ -140,6 +140,8 @@
 
     .brand{
         margin: 0 auto;
+        height: 100px !important;
+        width: 100px !important;
     }
     
     /* .navLinks{
