@@ -1,15 +1,15 @@
 .footer {
-    color: white;
+    color: rgb(143, 140, 140);
     padding: 2rem 0;
     border-top: 1px solid #eaeaea;
-    background: var(--darker-red);
+    background: var(--primary-black);
     height: 100%;
 }
 
 .footer ul{
     list-style: none;
     text-align: left;
-    color: white;
+    color: rgb(143, 140, 140);
 }
 
 .copyRight{

@@ -2,10 +2,10 @@ import styles from "../styles/Home.module.css";
 
 // Import all components/section
 import Header from "../components/Header/Header";
-import Apropos from "./apropos";
-import Services from "./services";
-import Contact from "./contact/index";
-import Realisations from "./realisations";
+import Apropos from "./A-propos";
+import Services from "./Services";
+import Contact from "./Contact";
+import Realisations from "./Realisations";
 
 import Separator from "../components/Reusable/Separator";
 import TopMessage from "../components/Reusable/TopMessage";
