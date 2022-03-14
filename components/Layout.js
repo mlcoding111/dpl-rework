@@ -14,7 +14,6 @@ export default function Layout({ children }) {
     const formatTitle = (pathname) => {
         let title;
         navLinks.forEach(link => {
-            console.log(`Link : ${link.path} \n Pathname: ${pathname}`)
             if(link.path == pathname){
                 title = link.name
             }
