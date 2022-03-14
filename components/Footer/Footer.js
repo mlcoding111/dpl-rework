@@ -40,9 +40,9 @@ export default function Footer() {
           <hr></hr>
         </Row>
 
-        <Row clasName="align-items-center">
+        <Row className="align-items-center">
           <Col md="7" lg="8">
-          <p class={styles.copyRight}>Copyright 2022 DPL - All Rights Reserverd.</p>    
+          <p className={styles.copyRight}>Copyright 2022 DPL - All Rights Reserverd.</p>    
           </Col>
 
           { /* Social */}

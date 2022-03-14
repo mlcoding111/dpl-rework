@@ -14,11 +14,8 @@ export default function NavBar() {
 
   React.useEffect(() => {
 
-    let scrolledNav = document.querySelector("#scrolled");
-
     const onScroll = (e) => {
       let scrollValue = e.target.documentElement.scrollTop;
-      console.log(scrollValue);
       if (scrollValue > 100) {
       }
     };

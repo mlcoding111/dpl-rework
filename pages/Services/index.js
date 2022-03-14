@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <section id="services">
  
-        <h2>NOS SERVICES</h2>
+        <h2 data-aos="fade-up">NOS SERVICES</h2>
         <hr className="w-25 mb-3"></hr>
         <ServicesList />
      
