@@ -3,6 +3,9 @@ import ContactCard from "./ContactCard";
 
 import Styles from "./Contact.module.css";
 
+import femaleAvatar from "../../public/images/avatar-female.svg";
+import maleAvatar from "../../public/images/avatar-male.svg";
+
 import { Col, Container, Row } from "react-bootstrap";
 const ContactCardList = () => {
   return (
@@ -15,7 +18,7 @@ const ContactCardList = () => {
           number="819-446-1694 "
           mail="Dplacroix@outlook.com"
           role="Directrice"
-          avatarSrc="https://www.bootdey.com/img/Content/user_2.jpg"
+          avatarSrc={femaleAvatar}
         />
         </Col>
         <Col md="6" lg="5" data-aos="zoom-in-right">
@@ -25,7 +28,7 @@ const ContactCardList = () => {
           number="819-993-8686"
           mail="Dplacroix@outlook.com"
           role="Directeur"
-          avatarSrc="https://www.bootdey.com/img/Content/user_1.jpg"
+          avatarSrc={maleAvatar}
         />
         </Col>
     </Row>

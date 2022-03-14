@@ -11,7 +11,7 @@ const ContactCard = ({name, mail, number, avatarSrc, role}) => {
 
            <div className={Styles.container}>
                 {/* <div className={Styles.bannerImg}></div> */}
-                <Image src="https://www.w3schools.com/bootstrap4/img_avatar3.png" className={Styles.profileImg} alt="contact-image"></Image>
+                <Image src={avatarSrc} height={150} width={125} className={Styles.profileImg} alt="contact-image"/>
                 <h1 className={Styles.name}>{name}</h1>
                 <p className={Styles.description}>{role}</p>
                 <hr></hr>
