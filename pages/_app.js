@@ -6,7 +6,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import layout from '../components/Layout.js'
+import Layout from '../components/Layout.js'
 import React from 'react';
 
 
@@ -16,9 +16,9 @@ function MyApp({ Component, pageProps }) {
     AOS.init()
   }, [])
   return (
-    <layout>      
+    <Layout>      
       <Component {...pageProps} />
-    </layout>
+    </Layout>
   )
 }
 
