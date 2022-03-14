@@ -23,7 +23,7 @@ export default function Home() {
         <section id="services">
           <Services />
         </section>
-        <Separator text="Décontamination Précision Lacroix inc"/>
+        <Separator text="Décontamination Précision Lacroix"/>
 
         <section id="à-propos">
           <Apropos />

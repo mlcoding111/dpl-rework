@@ -34,14 +34,14 @@ export default function Apropos() {
             </h3>
 
             <p className="long-text my-4">
-              Nous offrons un service professionnel qui couvre tout le Québec. Pour voir les services disponible,
+              Nous offrons un service professionnel qui couvre tout le Québec. Pour voir les services disponibles,
               veuillez consulter nos services offerts.
             </p>
             <Link href="/Services" passHref>
-            <button className={styles.btn}>Services</button>
+            <button className={styles.btn}>Nos services</button>
             </Link>
           </Col>
-          <Col lg="5" md="12" data-aos="fade-right" className="mt-2">
+          <Col lg="5" md="12" data-aos="fade-right" className="mt-3">
             <Image src={img} alt="Truck"></Image>
           </Col>
         </Row>

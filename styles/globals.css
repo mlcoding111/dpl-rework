@@ -100,9 +100,9 @@ h2{
 }
 
 h3{
-  --min: 1.2em;
+  --min: 1.4em;
   --val: 2.5vw;
-  --max: 1.6em;
+  --max: 1.8em;
   /* text-shadow: 3px 3px 5px red; */
 }
 
@@ -243,7 +243,7 @@ section{
 }
 @media only screen and (max-width: 500px){
   section{
-    padding: 3rem 0rem;
+    padding: 3rem 1rem;
   }
 }
 
