@@ -8,7 +8,7 @@ import { navLinks } from "../utils/data";
 import TopMessage from './Reusable/TopMessage'
 import React from 'react'
 
-export default function layout({ children }) {
+export default function Layout({ children }) {
     const router = useRouter();
 
     const formatTitle = (pathname) => {

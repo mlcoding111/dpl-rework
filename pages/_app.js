@@ -6,7 +6,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import layout from '../components/layout.js'
+import layout from '../components/Layout.js'
 import React from 'react';
 
 
