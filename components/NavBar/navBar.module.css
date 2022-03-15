@@ -51,7 +51,7 @@
     height: 5px;
     left: 50%;
     bottom: 0;
-    background-color: var(--primary-red);
+    background-color: var(--navlinks-after) !important;
     transition: all ease-in-out .2s;
     border-bottom-left-radius: 5px 5px;
     border-bottom-right-radius: 5px 5px;
@@ -80,7 +80,7 @@
     height: 5px;
     left: 0;
     bottom: 0;
-    background-color: var(--navlinks-hover);
+    background-color: var(--navlinks-after) !important;
     transition: all ease-in-out .2s;
     border-bottom-left-radius: 5px 5px;
     border-bottom-right-radius: 5px 5px;

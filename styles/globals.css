@@ -11,7 +11,7 @@ body {
 }
 
 body{
-  background: linear-gradient(to right,#17161a,#242124 50%,#17161a);
+  background: linear-gradient(to right,#17161a,#6F6F6F 50%,#17161a);
 }
 
 /* Variables */
@@ -30,7 +30,8 @@ body{
 --primary-red: #ff0e1f;
 --darker-red: #9b000a; */
 
-:root{
+/* Gray theme 
+
   --header-clr: #6F6F6F;
 
   --navlinks-shadow: rgba(165, 1, 1, 0.986);
@@ -43,6 +44,27 @@ body{
 
   --primary-black: #0e0e0f;
   --section-clr: #4A4B4B;
+  --footer-clr: rgba(15,15,15,.8);
+  --primary-red: #ff0e1f;
+  --darker-red: #9b000a;
+
+*/
+
+:root{
+  --header-clr: linear-gradient(to bottom,#444444,#6F6F6F);
+
+  --navlinks-shadow: rgba(14, 13, 13, 0.986);
+  --navbar-clr: var(--darker-red);
+  --navlinks-hover: var(--primary-black);
+  --toggler-clr: #000000e5;
+  --nav-boxshadow-clr: #000000;
+
+  --navlinks-clr: white;
+  --navlinks-after: var(--primary-black);
+  --navlinks-active: var(--primary-black);
+
+  --primary-black: #0e0e0f;
+  --section-clr: linear-gradient(to right,#17161a,#6F6F6F 50%,#17161a);
   --footer-clr: rgba(15,15,15,.8);
   --primary-red: #ff0e1f;
   --darker-red: #9b000a;

@@ -1,7 +1,7 @@
 .topBarWrapper{
     position: relative;
     height: 35px;
-    background: var(--darker-red);
+    background: #4A4B4B;
     width: 100%;
     display: flex;
     justify-content: center;
