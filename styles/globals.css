@@ -41,6 +41,7 @@ body{
   --nav-boxshadow-clr: #000000;
   --navlinks-clr: black;
   --navlinks-active: red;
+  --navlinks-active: var(--primary-black);
 
   --primary-black: #0e0e0f;
   --section-clr: #4A4B4B;
@@ -51,6 +52,7 @@ body{
 */
 
 :root{
+  
   --header-clr: linear-gradient(to bottom,#444444,#6F6F6F);
 
   --navlinks-shadow: rgba(14, 13, 13, 0.986);
@@ -68,6 +70,7 @@ body{
   --footer-clr: rgba(15,15,15,.8);
   --primary-red: #ff0e1f;
   --darker-red: #9b000a;
+  
 }
 
 h2, h3{
