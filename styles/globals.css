@@ -16,17 +16,40 @@ body{
 
 /* Variables */
 
+/* Default theme */
+/*   
+--header-clr: #a0a0a0a8;
+
+--navlinks-shadow: rgba(17, 7, 7, 0.986);
+--navbar-clr: #a1a1a1;
+--navlinks-hover: var(--primary-red);
+
+--primary-black: #0e0e0f;
+--section-clr: #151516;
+--footer-clr: rgba(15,15,15,.8);
+--primary-red: #ff0e1f;
+--darker-red: #9b000a; */
+
 :root{
+  --header-clr: #6F6F6F;
+
+  --navlinks-shadow: rgba(165, 1, 1, 0.986);
+  --navbar-clr: #A4A4A4;
+  --navlinks-hover: var(--primary-red);
+  --toggler-clr: #000000e5;
+  --nav-boxshadow-clr: #000000;
+  --navlinks-clr: black;
+  --navlinks-active: red;
+
   --primary-black: #0e0e0f;
-  --section-clr: #151516;
+  --section-clr: #4A4B4B;
   --footer-clr: rgba(15,15,15,.8);
   --primary-red: #ff0e1f;
   --darker-red: #9b000a;
+}
 
-  /* Variables for the arrow separator clip */
-  --size: 50px;   /* size of the cut */
-  --gap: 10px;    /* the gap */
-  --angle: 90deg; /* angle of the arrow */
+h2, h3{
+  text-shadow: 0px 2px 3px black;
 }
 
 
@@ -94,21 +117,21 @@ p {
 }
 
 h2{
-  --min: 1.6em;
+  --min: 1.8em;
   --val: 4.5vw;
   --max: 2.2em;
   /* text-shadow: 3px 3px 10px var(--darker-red); */
 }
 
 h3{
-  --min: 1.3em;
+  --min: 1.4em;
   --val: 2.5vw;
   --max: 1.8em;
   /* text-shadow: 3px 3px 5px red; */
 }
-
+/* background: linear-gradient(to right,#17161a,#242124 50%,#17161a); */
 body{
-  background: linear-gradient(to right,#17161a,#242124 50%,#17161a);
+  background: linear-gradient(to right,#17161a,#242124 50%,#17161a) !important;
 }
 
 a {
@@ -138,13 +161,15 @@ a {
   text-decoration: solid;
   letter-spacing: 1.2px;
   font-family: Rubik-Bold !important;
-  clip-path: polygon(0 0, 100% 0%, 100% 79%, 51% 100%, 0 80%);
+  /* clip-path: polygon(0 0, 100% 0%, 100% 79%, 51% 100%, 0 80%); */
+  border: 1px solid black;
 
 }
 
 /* Sections */
 
 section{
+  background: var(--section-clr);
   padding: 4rem 2rem;
   min-height: 100%;
   text-align: center; 

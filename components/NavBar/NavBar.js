@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 import navBar from "./navBar.module.css";
 import { navLinks } from "../../utils/data";
-import Logo from "../../public/images/brand-logo-white.svg";
+import Logo from "../../public/images/brand.svg";
 
 export default function NavBar() {
   const router = useRouter();
@@ -17,6 +17,7 @@ export default function NavBar() {
     const onScroll = (e) => {
       let scrollValue = e.target.documentElement.scrollTop;
       if (scrollValue > 100) {
+        // document.documentElement.style.setProperty('--navbar-clr', '#0561f5');
       }
     };
     window.addEventListener("scroll", onScroll);
