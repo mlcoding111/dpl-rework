@@ -90,6 +90,7 @@ h2, h3{
 body{
   overflow-x: clip !important;
   scrollbar-color: var(--primary-red) !important;
+
 }
 
 body::-webkit-scrollbar{
