@@ -89,16 +89,17 @@ h2, h3{
 
 body{
   overflow-x: clip !important;
-  scrollbar-color: red !important;
+  scrollbar-color: var(--primary-red) !important;
 }
 
 body::-webkit-scrollbar{
   width: 8px;
+  background: silver;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--primary-red);
-  /* border-radius: 6px; */
+  background-color: var(--darker-red);
+  border-radius: 2px;
   border: 3px solid var(--scrollbarBG);
 }
 body::-webkit-scrollbar-thumb:hover{
