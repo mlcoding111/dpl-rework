@@ -16,7 +16,7 @@ export default function Home() {
       {/*  Header */}
       <Header />
       {/* <Separator/> */}
-      {/*  Main content of hompage */}
+
       <main className={styles.main}>
   
         <Separator/>
