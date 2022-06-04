@@ -14,6 +14,8 @@
     <br />
     <br />
     <a href="https://decontamination-pl.ca/" target="_blank">View Demo</a>
+    <br />
+    <a href="https://www.facebook.com/D%C3%A9contamination-Pr%C3%A9cision-Lacroix-100252365971083" target="_blank">Visit their facebook page</a>
   </p>
 </div>
 
